@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApp1
+﻿namespace View
 {
     partial class main
     {
@@ -28,54 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.AddBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.ReadyBtn = new System.Windows.Forms.Button();
             this.eventLog1 = new System.Diagnostics.EventLog();
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.ArrowBtn = new System.Windows.Forms.Button();
+            this.txb_name_fuel = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // AddBtn
             // 
-            this.button1.Location = new System.Drawing.Point(224, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(123, 46);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Добавить топливо";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.AddBtn.Location = new System.Drawing.Point(24, 345);
+            this.AddBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(195, 57);
+            this.AddBtn.TabIndex = 0;
+            this.AddBtn.Text = "Добавить топливо";
+            this.AddBtn.UseVisualStyleBackColor = true;
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 29);
+            this.label1.Location = new System.Drawing.Point(20, 36);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 13);
+            this.label1.Size = new System.Drawing.Size(155, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Список видов топлива";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(18, 78);
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(24, 96);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(4);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(147, 186);
+            this.listBox1.Size = new System.Drawing.Size(195, 228);
             this.listBox1.TabIndex = 2;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            // this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
-            // button2
+            // ReadyBtn
             // 
-            this.button2.Location = new System.Drawing.Point(467, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(134, 49);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Готово";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ReadyBtn.Location = new System.Drawing.Point(623, 15);
+            this.ReadyBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.ReadyBtn.Name = "ReadyBtn";
+            this.ReadyBtn.Size = new System.Drawing.Size(179, 60);
+            this.ReadyBtn.TabIndex = 3;
+            this.ReadyBtn.Text = "Готово";
+            this.ReadyBtn.UseVisualStyleBackColor = true;
+            this.ReadyBtn.Click += new System.EventHandler(this.ReadyBtn_Click);
             // 
             // eventLog1
             // 
@@ -84,33 +92,66 @@
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(244, 78);
+            this.listBox2.ItemHeight = 16;
+            this.listBox2.Location = new System.Drawing.Point(325, 96);
+            this.listBox2.Margin = new System.Windows.Forms.Padding(4);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(147, 186);
+            this.listBox2.Size = new System.Drawing.Size(195, 228);
             this.listBox2.TabIndex = 4;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(632, 357);
+            this.button3.Location = new System.Drawing.Point(843, 439);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 64);
+            this.button3.Size = new System.Drawing.Size(187, 79);
             this.button3.TabIndex = 5;
             this.button3.Text = "Выход";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // ArrowBtn
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ArrowBtn.Location = new System.Drawing.Point(246, 186);
+            this.ArrowBtn.Name = "ArrowBtn";
+            this.ArrowBtn.Size = new System.Drawing.Size(58, 48);
+            this.ArrowBtn.TabIndex = 6;
+            this.ArrowBtn.Text = "стрелочка";
+            this.ArrowBtn.UseVisualStyleBackColor = true;
+            this.ArrowBtn.Click += new System.EventHandler(this.ArrowBtn_Click);
+            // 
+            // txb_name_fuel
+            // 
+            this.txb_name_fuel.Location = new System.Drawing.Point(279, 419);
+            this.txb_name_fuel.Name = "txb_name_fuel";
+            this.txb_name_fuel.Size = new System.Drawing.Size(189, 22);
+            this.txb_name_fuel.TabIndex = 7;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(26, 424);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(221, 17);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Введите наименование топлива";
+            // 
+            // main
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txb_name_fuel);
+            this.Controls.Add(this.ArrowBtn);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.ReadyBtn);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AddBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -122,13 +163,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ReadyBtn;
         private System.Diagnostics.EventLog eventLog1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button ArrowBtn;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txb_name_fuel;
     }
 }
 
