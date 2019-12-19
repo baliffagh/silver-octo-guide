@@ -102,8 +102,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{919518fe-6f82-496c-8841-5438b042e5fc}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{d0a97f8c-132f-43e5-a635-8baa9b734431}</Project>
+      <Project>{03df0063-2729-476f-9113-47388a86fdff}</Project>
       <Name>Model</Name>
     </ProjectReference>
     <ProjectReference Include="..\Presentation\Presentation.csproj">

@@ -20,29 +20,14 @@ namespace View
             InitializeComponent();
         }
 
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
+        event Action Done;
 
-        }
+        /*  private void toolStripMenuItem1_Click(object sender, EventArgs e)
+          {
 
-        private void add_transport_Load(object sender, EventArgs e)
-        {
-            
+          }*/
 
-           
-        }
-
-        private void fbToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void Gotovo_Click(object sender, EventArgs e)
         {
             Vehicle transport = new Vehicle();
         

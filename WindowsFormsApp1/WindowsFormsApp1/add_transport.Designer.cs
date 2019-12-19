@@ -55,7 +55,7 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Gotovo = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,7 +69,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(800, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+//            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // label1
             // 
@@ -151,14 +151,14 @@
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(168, 26);
             this.toolStripMenuItem1.Text = "Выберите транспорт";
-            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
+            //this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // fbToolStripMenuItem
             // 
             this.fbToolStripMenuItem.Name = "fbToolStripMenuItem";
             this.fbToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.fbToolStripMenuItem.Text = "Автомобиль";
-            this.fbToolStripMenuItem.Click += new System.EventHandler(this.fbToolStripMenuItem_Click);
+           // this.fbToolStripMenuItem.Click += new System.EventHandler(this.fbToolStripMenuItem_Click);
             // 
             // cvbToolStripMenuItem1
             // 
@@ -269,22 +269,22 @@
             this.textBox7.Size = new System.Drawing.Size(100, 22);
             this.textBox7.TabIndex = 14;
             // 
-            // button1
+            // Gotovo
             // 
-            this.button1.Location = new System.Drawing.Point(597, 356);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(110, 42);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Готово";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Gotovo.Location = new System.Drawing.Point(597, 356);
+            this.Gotovo.Name = "Gotovo";
+            this.Gotovo.Size = new System.Drawing.Size(110, 42);
+            this.Gotovo.TabIndex = 15;
+            this.Gotovo.Text = "Готово";
+            this.Gotovo.UseVisualStyleBackColor = true;
+            this.Gotovo.Click += new System.EventHandler(this.Gotovo_Click);
             // 
             // add_transport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Gotovo);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
@@ -305,7 +305,7 @@
             this.Name = "add_transport";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "add_transport";
-            this.Load += new System.EventHandler(this.add_transport_Load);
+           // this.Load += new System.EventHandler(this.add_transport_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -342,6 +342,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Gotovo;
     }
 }

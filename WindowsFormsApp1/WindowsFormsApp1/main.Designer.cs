@@ -61,7 +61,6 @@
             this.label1.Size = new System.Drawing.Size(155, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Список видов топлива";
-            // this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // listBox1
             // 
@@ -72,7 +71,6 @@
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(195, 228);
             this.listBox1.TabIndex = 2;
-            // this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // ReadyBtn
             // 

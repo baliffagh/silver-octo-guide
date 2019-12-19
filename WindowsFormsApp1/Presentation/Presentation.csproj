@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddTransportPresenter.cs" />
     <Compile Include="DorogaPresenter.cs" />
     <Compile Include="Fuel.cs" />
     <Compile Include="IAddTransport.cs" />
@@ -61,7 +62,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Model\Model.csproj">
-      <Project>{d0a97f8c-132f-43e5-a635-8baa9b734431}</Project>
+      <Project>{03df0063-2729-476f-9113-47388a86fdff}</Project>
       <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
